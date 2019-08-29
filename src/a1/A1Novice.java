@@ -2,8 +2,10 @@ package a1;
 
 import java.util.Scanner;
 
-public class A1Novice {
 
+public class A1Novice {
+	
+	
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
@@ -33,9 +35,8 @@ public class A1Novice {
 				
 			}
 			
-			
-				
-		System.out.println(person + ": " + totalPrice);
+			String makeThatTwoDecimals = String.format("%.2f", totalPrice);
+			System.out.println(person + ": " + makeThatTwoDecimals);
 				
 				
 				
