@@ -8,7 +8,39 @@ public class A1Novice {
 		
 		Scanner scan = new Scanner(System.in);
 
-		// Your code follows here.
+		// Your code follows here
+		
+		int numberOfCustomers = scan.nextInt();
+		// String stringNumberOfPeople = scan.nextLine();
+		
+		String[] array = new String[numberOfCustomers];
+		
+		
+		
+		for (int i = 0; i< array.length; i++) {
+			Double totalPrice = 0.0;
+			String fName = scan.next();
+			char firstInitial = fName.charAt(0);
+			String lName = scan.next();
+			int quantity = scan.nextInt();
+			String person = firstInitial + ". " + lName;
+		
+			for(int x = 0; x < quantity; x++) {
+				int numOfItem = scan.nextInt();
+				String nameOfItem = scan.next();
+				Double price = scan.nextDouble();
+				totalPrice += (numOfItem * price);
+				
+			}
+			
+			
+				
+		System.out.println(person + ": " + totalPrice);
+				
+				
+				
+			};
+			
 		
 	}
 }
