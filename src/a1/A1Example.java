@@ -6,7 +6,7 @@ public class A1Example {
 
 	public static void main(String[] args) {
 		// Print out the Java version number, just to let 
-		// you know what Eclipse thinks it is using and
+		// you know what Eclipse thinks it is using and 
 		// so that you can confirm that it is 10.0 or higher.
 		
 		// System.out.println("Your Java version: " + System.getProperty("java.version"));
