@@ -12,14 +12,18 @@ public class A1Novice {
 
 		// Your code follows here
 		
+		
+		
 		int numberOfCustomers = scan.nextInt();
-		// String stringNumberOfPeople = scan.nextLine();
-		
-		String[] array = new String[numberOfCustomers];
 		
 		
+	
+		// takes in the customers name, finding the first character of the first name,
+		// and the quantity of items each customer bought.  It then goes through and finds
+		// the total price each customer spent
 		
-		for (int i = 0; i< array.length; i++) {
+		
+		for (int i = 0; i< numberOfCustomers; i++) {
 			Double totalPrice = 0.0;
 			String fName = scan.next();
 			char firstInitial = fName.charAt(0);
