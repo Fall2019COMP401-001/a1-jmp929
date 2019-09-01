@@ -51,12 +51,15 @@ public class A1Adept {
 			String lName = scan.next(); 
 			int numOfItemsBought = scan.nextInt();
 				for (int z = 0; z < numOfItemsBought; z++) {
+				double temp = 0.0;
 				int quantityOfItem = scan.nextInt();
 				String itemLabel = scan.next();
 				double price = pairs.get(itemLabel);
 				
 				personalSpent += (quantityOfItem * price);
-				sum += personalSpent;
+				temp = (quantityOfItem * price);
+				sum += temp;
+				
 					
 			}
 				
@@ -77,18 +80,19 @@ public class A1Adept {
 			// then goes through an compares the following customers to see
 			// if they spent less in which case they are assigned to smallest
 			
-			if (smallest > personalSpent) {
+			if (smallest >= personalSpent) {
 				smallest = personalSpent;
 				nameOfSmallest = fName + " " + lName;
 			}
 			
 			// divides the sum by the number of customers to find the average
 				
-			average = sum / numOfCustomers;
+			// average = sum / numOfCustomers;
 			
 			
 		}
 		
+		average = sum / numOfCustomers;
 		// turns all the doubles to two decimal numbers
 		
 		String makeThatTwoDecimals = String.format("%.2f", average);
