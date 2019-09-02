@@ -79,7 +79,7 @@ public class A1Jedi {
 				
 				for (int t = 0; t < z + 1; t++) {
 					if (smart[t].equals(itemLabel)) {
-						c += 1;
+						c += 1; 
 						if (c == 2) {
 							allGood = false;
 						}
@@ -89,11 +89,12 @@ public class A1Jedi {
 				
 				if (allGood == true) {
 				numOfOccurences = numCustomers.get(nameOfItem) + 1;
-				}
+				numCustomers.put(nameOfItem, numOfOccurences);
+				} 
 				
 				numOfThatItem = numProduct.get(nameOfItem) + quantityOfItem;
 				
-				numCustomers.put(nameOfItem, numOfOccurences);
+				// numCustomers.put(nameOfItem, numOfOccurences);
 				numProduct.put(nameOfItem, numOfThatItem);
 				
 				
@@ -102,7 +103,6 @@ public class A1Jedi {
 			
 		}
 		
-		scan.close();
 		
 		
 		
